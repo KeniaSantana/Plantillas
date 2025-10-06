@@ -6,15 +6,10 @@
     <title>Plantillas</title>
 </head>
 <body>
-    <h1>Mi primer Plantilla</h1>
-    <h4>Creado por {{nombre}}</h4>
+        <h1>Personajes del cómic Batman</h1>
     <ol>
-        {%for numero in numE%}
-        <li>
-        {{numE}}
-        </li>
-        {%endfor%}
-    </ol>
-
+        {% for p in personajes %}
+        <li>{{ p }}</li>
+        {% endfor %}
 </body>
 </html>

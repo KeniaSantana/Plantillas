@@ -6,15 +6,12 @@
     <title>Plantillas</title>
 </head>
 <body>
-    <h1>Mi primer Plantilla</h1>
-    <h4>Creado por {{nombre}}</h4>
+    <h1>Mi primera plantilla</h1>
+    <h4>Creado por {{ nombre }}</h4>
     <ol>
-        {%for color in colores%}
-        <li>
-        {{colores}}
-        </li>
-        {%endfor%}
+        {% for amigo in amigos %}
+        <li>{{ amigo }}</li>
+        {% endfor %}
     </ol>
-
 </body>
 </html>
